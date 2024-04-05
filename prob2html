@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currency Converter</title>
+<link rel="stylesheet" href="prob2style">
+</head>
+<body>
+
+<div class="container">
+    <h1>Currency Converter</h1>
+    <form id="currencyForm">
+        <label for="sourceCurrency">From:</label>
+        <select id="sourceCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <input type="number" id="amount" placeholder="Enter amount" required>
+        <label for="targetCurrency">To:</label>
+        <select id="targetCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <button type="submit">Convert</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="prob2script.js"></script>
+</body>
+</html>
